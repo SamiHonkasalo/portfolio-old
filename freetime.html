@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <title>Sami Honkasalo - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sami Honkasalo Portfolio">
+    <meta name="keywords" content="HTML,CSS,Web Design,Sami Honkasalo,Portfolio,Web suunnittelu">
+    <meta name="author" content="Sami Honkasalo">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Start main -->
+    <main>
+        <!-- Start header -->
+        <header>
+            <div class="header-left">
+                <h1 class="font-satisfy">Sami</h1>
+                <h1 id="surname" class="font-satisfy">Honkasalo</h1>
+                <div class="portrait">
+                </div>
+            </div>
+
+            <div class="header-right">
+                <!-- Start nav -->
+                <nav class="nav font-opensans">
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu">
+                        <li><a href="index.html">Etusivu</a></li>
+                        <li><a class="active" href="freetime.html">Vapaa-aika</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="contact.html">Ota Yhteyttä</a></li>
+                    </ul>
+                </nav>
+                <!-- End nav -->
+                <h1 class="font-opensans">Vapaa-aika</h1>
+                <p class="header-text font-montserrat">
+                    Täältä voit lukea lisää vapaa-ajastani, harrastuksistani, sekä halutessasi tutustua talouteni
+                    kissoihin kuvagallerian avulla!
+                </p>
+            </div>
+        </header>
+        <!-- End header -->
+
+        <!-- Start content -->
+        <div>
+
+            <div class="content-top">
+                <h2 class="font-opensans">Mitä elämässäni on työajan ulkopuolella?</h2>
+                <p class="font-montserrat">
+                    Säännöllisiin harrastuksiini kuuluvat tietokonepelit, kuntosali ja muu urheilu, sekä vähintään
+                    vuosittainen vapaa-ajan matkustus.
+                    Harrastuksieni ohella vietän paljon aikaa talouteeni kuuluvan avovaimoni, sekä kahden kissamme
+                    kanssa. Omien kokemuksieni mukaan vapaa-ajalla ja harrastuksilla on erittäin suuri merkitys
+                    työelämässä, erityisesti henkisen hyvinvoinnin kannalta. Urheilu edistää henkisen hyvinvoinnin
+                    lisäksi myös fyysistä terveyttä, joka saattaa helposti kärsiä toimistotyössä.
+                </p>
+            </div>
+
+                <!-- Middle content contains info cards. Card amount can be increased if needed by copying the full card definition
+                Please note that the card background image is defined as inline-style to avoid multiple card definitions on CSS -->
+            <div class="content-middle">
+                <!-- Card number 1 -->
+                <div class="card">
+                    <div style="background: url(./images/keyboard.jpg) no-repeat; background-size: cover; background-position: center;"
+                        class="cardTop">
+                    </div>
+                    <div class="cardBottom">
+                        <div class="cardText">
+                            <!--       Title and description will always show -->
+                            <h3 class="cardTitle font-opensans">Videopelit</h3>
+                            <h4 class="cardInfo font-opensans">Merkittävä osa elämääni jo yli viidentoista vuoden ajan!
+                            </h4>
+                            <!--       Only visibile when parent element is hovered over -->
+                            <div class="cardHoverText font-montserrat">
+                                Viimeisimpiä pelattuja pelejä ovat mm:
+                                <ul>
+                                    <li>Dota 2, PC</li>
+                                    <li>Red Dead Redemption 2, PS4</li>
+                                    <li>Spiderman, PS4</li>
+                                </ul>
+                                <!-- No button for other sites than index
+                                <button onclick="window.location.href = 'freetime.html';" class="card-button">Lue
+                                    Lisää</button>
+                                -->
+                            </div>
+                            <!-- Only visibile when parent element is hovered over -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card number 2 -->
+                <div class="card">
+                    <div style="background: url(./images/gym.jpg) no-repeat; background-size: cover; background-position: center;"
+                        class="cardTop">
+                    </div>
+                    <div class="cardBottom">
+                        <div class="cardText">
+                            <!--       Title and description will always show -->
+                            <h3 class="cardTitle font-opensans">Liikunta</h3>
+                            <h4 class="cardInfo font-opensans">Työkykyä ja hyvinvointia ylläpitävä harrastus!</h4>
+                            <!--       Only visibile when parent element is hovered over -->
+                            <div class="cardHoverText font-montserrat">
+                                Säännöllisesti harrastettavat liikuntamuodot:
+                                <ul>
+                                    <li>Kuntosali</li>
+                                    <li>Pyöräily</li>
+                                    <li>Frisbeegolf</li>
+                                </ul>
+                                <!-- No button for other sites than index
+                                <button onclick="window.location.href = 'freetime.html';" class="card-button">Lue
+                                    Lisää</button>
+                                -->
+                            </div>
+                            <!-- Only visibile when parent element is hovered over -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card number 3 -->
+                <div class="card">
+                    <div style="background: url(./images/travel.jpg) no-repeat; background-size: cover; background-position: center;"
+                        class="cardTop">
+                    </div>
+                    <div class="cardBottom">
+                        <div class="cardText">
+                            <!--       Title and description will always show -->
+                            <h3 class="cardTitle font-opensans">Matkustus</h3>
+                            <h4 class="cardInfo font-opensans">Rikkautta ja perspektiiviä elämään!</h4>
+                            <!--       Only visibile when parent element is hovered over -->
+                            <div class="cardHoverText font-montserrat">
+                                Viimeisimpiä matkakohteitani ovat mm:
+                                <ul>
+                                    <li>Intia</li>
+                                    <li>Tšekki</li>
+                                    <li>Latvia</li>
+                                </ul>
+                                <!-- No button for other sites than index
+                                <button onclick="window.location.href = 'freetime.html';" class="card-button">Lue
+                                    Lisää</button>
+                                -->
+                            </div>
+                            <!-- Only visibile when parent element is hovered over -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-bottom">
+                <h2 class="font-opensans">Perheeni</h2>
+                <p class="font-montserrat">Perheeseeni kuuluu avovaimoni, sekä kissamme Pablo & Figaro. Kissat ovat
+                    noin kuusivuotiaita, ja he ovat tulleet talouteemme eläinsuojeluyhdistyksen kautta. Tällä
+                    sivulla pääset katsomaan muutaman kuvan kissoistamme. Kissojen kautta elämääni tulee lisää
+                    rytmiä ja vastuuta myös vapaa-ajalla.</p>
+
+                <p class="cats"><a href="images/image-1.jpg" data-lightbox="Kissat" data-title="Lähikuva Figarosta"><img
+                            src="images/image-1.jpg" alt="Lähikuva Figarosta"></a>
+                    <a href="images/image-2.jpg" data-lightbox="Kissat" data-title="Pablo Laatikossa"> <img
+                            src="images/image-2.jpg" alt="Pablo Laatikossa"></a>
+                    <a href="images/image-3.jpg" data-lightbox="Kissat" data-title="Figaro ja Lelu"> <img
+                            src="images/image-3.jpg" alt="Figaro ja Lelu"></a>
+                    <a href="images/image-4.jpg" data-lightbox="Kissat" data-title="Figaro Korissa"> <img
+                            src="images/image-4.jpg" alt="Figaro Korissa"></a>
+                </p>
+            </div>
+
+        </div>
+        <!-- End content -->
+        <!-- Start footer -->
+        <footer>
+            <div class="footer-left">
+                <ul class="footer-menu">
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li><a class="footer-active" href="freetime.html">Vapaa-aika</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="contact.html">Ota Yhteyttä</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sami-honkasalo/" target="blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/" target="blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="footertext font-montserrat">© Sami Honkasalo<br /> Heinämutka 5 A 17<br /> 40250
+                    Jyväskylä<br /> </p>
+                <address class="footeraddress font-montserrat"> <a href="mailto:honkasalo.sami@gmail.com">
+                        honkasalo.sami@gmail.com</a><br /> 040 5598495
+                </address>
+            </div>
+        </footer>
+        <!-- End footer -->
+
+    </main>
+    <!-- End main -->
+    <!-- Lightbox -->
+    <script src="js/lightbox-plus-jquery.js"></script>
+</body>
