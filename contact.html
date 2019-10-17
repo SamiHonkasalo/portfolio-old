@@ -1,188 +1,232 @@
 <!DOCTYPE html>
 <html lang="fi">
-
-<head>
+  <head>
     <title>Sami Honkasalo - Portfolio</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sami Honkasalo Portfolio">
-    <meta name="keywords" content="HTML,CSS,Web Design,Sami Honkasalo,Portfolio,Web suunnittelu">
-    <meta name="author" content="Sami Honkasalo">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sami Honkasalo Portfolio" />
+    <meta
+      name="keywords"
+      content="HTML,CSS,Web Design,Sami Honkasalo,Portfolio,Web suunnittelu"
+    />
+    <meta name="author" content="Sami Honkasalo" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Satisfy"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Start page -->
     <main>
-        <!-- Start header -->
-        <header>
-            <div class="header-left">
-                <h1 class="font-satisfy">Sami</h1>
-                <h1 id="surname" class="font-satisfy">Honkasalo</h1>
-                <div class="portrait">
-                </div>
-            </div>
-
-            <div class="header-right">
-                <!-- Start nav -->
-                <nav class="nav font-opensans">
-                    <input class="menu-btn" type="checkbox" id="menu-btn" />
-                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-                    <ul class="menu">
-                        <li><a href="index.html">Etusivu</a></li>
-                        <li><a href="freetime.html">Vapaa-aika</a></li>
-                        <li><a href="cv.html">CV</a></li>
-                        <li><a class="active" href="contact.html">Ota Yhteyttä</a></li>
-                    </ul>
-                </nav>
-                <!-- End nav -->
-                <h1 class="font-opensans">Ota yhteyttä</h1>
-                <p class="header-text font-montserrat">
-                    Tältä sivulta löydät yhteystietoni, sekä perusteluni sille, miksi minuun kannattaa ottaa yhteyttä.
-                </p>
-            </div>
-        </header>
-        <!-- End header -->
-
-        <!-- Start content -->
-        <div>
-
-            <div class="content-top">
-                <h2 class="font-opensans">Mitä toivon</h2>
-                <p class="font-montserrat">
-                    Tulevalta työnantajalta toivon ensimmäisenä mahdollisuutta todistaa kykyni ja tuoda esiin
-                    innostustani kyseistä työtä kohtaa. Toisena toivon tilaisuutta päästä osaksi mukavaa ja kannustavaa
-                    sosiaalista työilmapiiriä, joka on omien kokemuksieni mukaan yksi työpaikan tärkeimmistä asioista.
-                    Mikäli tunnistatte itsenne ja yrityksenne edes osittain näistä kriteereistä, ja sivustolla on
-                    näkynyt jotakin Teitä
-                    kiinnostavaa, ottakaa rohkeasti yhteyttä!
-                </p>
-            </div>
-
-            <!-- Middle content contains info cards. Card amount can be increased if needed by copying the full card definition
-            Please note that the card background image is defined as inline-style to avoid multiple card definitions on CSS -->
-            <div class="content-middle">
-                <!-- Card number 1 -->
-                <div class="card">
-                    <div style="background: url(./images/mail.jpg) no-repeat; background-size: cover; background-position: center;"
-                        class="cardTop">
-                    </div>
-                    <div class="cardBottom">
-                        <div class="cardText">
-                            <!--       Title and description will always show -->
-                            <h3 class="cardTitle font-opensans">Sähköposti</h3>
-                            <h4 class="cardInfo font-opensans">Varmin tapa ottaa yhteyttä</h4>
-                            <!--       Only visibile when parent element is hovered over -->
-                            <div class="cardHoverText font-montserrat">
-                                Sähköpositse minut tavoittaa 100% varmuudella
-                                <ul>
-                                    <li><a href="mailto:honkasalo.sami@gmail.com">
-                                            honkasalo.sami@gmail.com</a></li>
-                                </ul>
-                                <!-- No button for other sites than index
-                                <button onclick="window.location.href = 'freetime.html';" class="card-button">Lue
-                                    Lisää</button>
-                                -->
-                            </div>
-                            <!-- Only visibile when parent element is hovered over -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card number 2 -->
-                <div class="card">
-                    <div style="background: url(./images/phone.jpg) no-repeat; background-size: cover; background-position: center;"
-                        class="cardTop">
-                    </div>
-                    <div class="cardBottom">
-                        <div class="cardText">
-                            <!--       Title and description will always show -->
-                            <h3 class="cardTitle font-opensans">Puhelin</h3>
-                            <h4 class="cardInfo font-opensans">Nopein tapa ottaa yhteyttä</h4>
-                            <!--       Only visibile when parent element is hovered over -->
-                            <div class="cardHoverText font-montserrat">
-                                Tästä numerosta minut tavoittaa lähes aina, ellen ole ulkomailla töissä tai reissussa
-                                <ul>
-                                    <li>040 5598495</li>
-                                </ul>
-                                <!-- No button for other sites than index
-                                <button onclick="window.location.href = 'freetime.html';" class="card-button">Lue
-                                    Lisää</button>
-                                -->
-                            </div>
-                            <!-- Only visibile when parent element is hovered over -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card number 3 -->
-                <div class="card">
-                    <div style="background: url(./images/social.jpg) no-repeat; background-size: cover; background-position: center;"
-                        class="cardTop">
-                    </div>
-                    <div class="cardBottom">
-                        <div class="cardText">
-                            <!--       Title and description will always show -->
-                            <h3 class="cardTitle font-opensans">LinkedIn</h3>
-                            <h4 class="cardInfo font-opensans">Sosiaalinen Media</h4>
-                            <!--       Only visibile when parent element is hovered over -->
-                            <div class="cardHoverText font-montserrat">
-                                Sosiaalisesta mediasta minut löytää täältä:
-                                <ul>
-                                    <li class="linkedin"><a href="https://www.linkedin.com/in/sami-honkasalo/"
-                                            target="blank"><i class="fab fa-linkedin-in fa-3x"></i></a></li>
-                                </ul>
-                                <!-- No button for other sites than index
-                                <button onclick="window.location.href = 'freetime.html';" class="card-button">Lue
-                                    Lisää</button>
-                                -->
-                            </div>
-                            <!-- Only visibile when parent element is hovered over -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-bottom">
-                <h2 class="font-opensans">Ota yhteyttä!</h2>
-                <p class="font-montserrat">Mikäli sivustolla näkyvistä asioista löytyi jotakin kiinnostavaa, niin
-                    olettehan rohkeasti yhteydessä. Minua saa tavoitella sähköpostitse ja puhelimitse, ja olen aina
-                    halukas keskustelemaan siitä, mitä voisimme tarjota toisillemme! Odotan innolla yhteydenottoanne.
-            </div>
-
+      <!-- Start header -->
+      <header>
+        <div class="header-left">
+          <h1 class="font-satisfy">Sami</h1>
+          <h1 id="surname" class="font-satisfy">Honkasalo</h1>
+          <div class="portrait"></div>
         </div>
-        <!-- End content -->
-        <!-- Start footer -->
-        <footer>
-            <div class="footer-left">
-                <ul class="footer-menu">
-                    <li><a href="index.html">Etusivu</a></li>
-                    <li><a href="freetime.html">Vapaa-aika</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a class="footer-active" href="contact.html">Ota Yhteyttä</a></li>
-                </ul>
-            </div>
-            <div class="footer-right">
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/sami-honkasalo/" target="blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/" target="blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
-                </div>
-                <p class="footertext font-montserrat">© Sami Honkasalo<br /> Heinämutka 5 A 17<br /> 40250
-                    Jyväskylä<br /> </p>
-                <address class="footeraddress font-montserrat"> <a href="mailto:honkasalo.sami@gmail.com">
-                        honkasalo.sami@gmail.com</a><br /> 040 5598495
-                </address>
-            </div>
-        </footer>
-        <!-- End footer -->
 
+        <div class="header-right">
+          <!-- Start nav -->
+          <nav class="nav font-opensans">
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"
+              ><span class="navicon"></span
+            ></label>
+            <ul class="menu">
+              <li><a href="index.html">Etusivu</a></li>
+              <li><a href="freetime.html">Vapaa-aika</a></li>
+              <li><a href="cv.html">CV</a></li>
+              <li><a class="active" href="contact.html">Ota Yhteyttä</a></li>
+            </ul>
+          </nav>
+          <!-- End nav -->
+          <h1 class="font-opensans">Ota yhteyttä</h1>
+          <p class="header-text font-montserrat">
+            Tältä sivulta löydät yhteystietoni, sekä perusteluni sille, miksi
+            minuun kannattaa ottaa yhteyttä.
+          </p>
+        </div>
+      </header>
+      <!-- End header -->
+
+      <!-- Start content -->
+      <div>
+        <div class="content-top">
+          <h2 class="font-opensans">Mitä toivon</h2>
+          <p class="font-montserrat">
+            Tulevalta työnantajalta toivon ensimmäisenä mahdollisuutta todistaa
+            kykyni ja tuoda esiin innostustani kyseistä työtä kohtaa. Toisena
+            toivon tilaisuutta päästä osaksi mukavaa ja kannustavaa sosiaalista
+            työilmapiiriä, joka on omien kokemuksieni mukaan yksi työpaikan
+            tärkeimmistä asioista. Mikäli tunnistatte itsenne ja yrityksenne
+            edes osittain näistä kriteereistä, ja sivustolla on näkynyt jotakin
+            Teitä kiinnostavaa, ottakaa rohkeasti yhteyttä!
+          </p>
+        </div>
+
+        <!-- Middle content contains info cards. Card amount can be increased if needed by copying the full card definition
+            Please note that the card background image is defined as inline-style to avoid multiple card definitions on CSS -->
+        <div class="content-middle">
+          <!-- Card number 1 -->
+          <div class="card">
+            <div
+              style="background: url(./images/mail.jpg) no-repeat; background-size: cover; background-position: center;"
+              class="cardTop"
+            ></div>
+            <div class="cardBottom">
+              <div class="cardText">
+                <!--       Title and description will always show -->
+                <h3 class="cardTitle font-opensans">Sähköposti</h3>
+                <h4 class="cardInfo font-opensans">
+                  Varmin tapa ottaa yhteyttä
+                </h4>
+                <!--       Only visibile when parent element is hovered over -->
+                <div class="cardHoverText font-montserrat">
+                  Sähköpositse minut tavoittaa 100% varmuudella
+                  <ul>
+                    <li>
+                      <a href="mailto:honkasalo.sami@gmail.com">
+                        honkasalo.sami@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                  <!-- No button for other sites than index
+                                <button onclick="window.location.href = 'freetime.html';" class="card-button">Lue
+                                    Lisää</button>
+                                -->
+                </div>
+                <!-- Only visibile when parent element is hovered over -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Card number 2 -->
+          <div class="card">
+            <div
+              style="background: url(./images/phone.jpg) no-repeat; background-size: cover; background-position: center;"
+              class="cardTop"
+            ></div>
+            <div class="cardBottom">
+              <div class="cardText">
+                <!--       Title and description will always show -->
+                <h3 class="cardTitle font-opensans">Puhelin</h3>
+                <h4 class="cardInfo font-opensans">
+                  Nopein tapa ottaa yhteyttä
+                </h4>
+                <!--       Only visibile when parent element is hovered over -->
+                <div class="cardHoverText font-montserrat">
+                  Tästä numerosta minut tavoittaa lähes aina, ellen ole
+                  ulkomailla töissä tai reissussa
+                  <ul>
+                    <li>040 5598495</li>
+                  </ul>
+                  <!-- No button for other sites than index
+                                <button onclick="window.location.href = 'freetime.html';" class="card-button">Lue
+                                    Lisää</button>
+                                -->
+                </div>
+                <!-- Only visibile when parent element is hovered over -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Card number 3 -->
+          <div class="card">
+            <div
+              style="background: url(./images/social.jpg) no-repeat; background-size: cover; background-position: center;"
+              class="cardTop"
+            ></div>
+            <div class="cardBottom">
+              <div class="cardText">
+                <!--       Title and description will always show -->
+                <h3 class="cardTitle font-opensans">LinkedIn</h3>
+                <h4 class="cardInfo font-opensans">Sosiaalinen Media</h4>
+                <!--       Only visibile when parent element is hovered over -->
+                <div class="cardHoverText font-montserrat">
+                  Sosiaalisesta mediasta minut löytää täältä:
+                  <ul>
+                    <li class="linkedin">
+                      <a
+                        href="https://www.linkedin.com/in/sami-honkasalo/"
+                        target="blank"
+                        ><i class="fab fa-linkedin-in fa-3x"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <!-- No button for other sites than index
+                                <button onclick="window.location.href = 'freetime.html';" class="card-button">Lue
+                                    Lisää</button>
+                                -->
+                </div>
+                <!-- Only visibile when parent element is hovered over -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-bottom">
+          <h2 class="font-opensans">Ota yhteyttä!</h2>
+          <p class="font-montserrat">
+            Mikäli sivustolla näkyvistä asioista löytyi jotakin kiinnostavaa,
+            niin olettehan rohkeasti yhteydessä. Minua saa tavoitella
+            sähköpostitse ja puhelimitse, ja olen aina halukas keskustelemaan
+            siitä, mitä voisimme tarjota toisillemme! Odotan innolla
+            yhteydenottoanne.
+          </p>
+        </div>
+      </div>
+      <!-- End content -->
+      <!-- Start footer -->
+      <footer>
+        <div class="footer-left">
+          <ul class="footer-menu">
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="freetime.html">Vapaa-aika</a></li>
+            <li><a class="footer-active" href="cv.html">CV</a></li>
+            <li><a href="contact.html">Ota Yhteyttä</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/sami-honkasalo/" target="blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/SamiHonkasalo" target="blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <p class="footertext font-montserrat">
+            © Sami Honkasalo<br />
+            Heinämutka 5 A 17<br />
+            40250 Jyväskylä<br />
+          </p>
+          <address class="footeraddress font-montserrat">
+            <a href="mailto:honkasalo.sami@gmail.com">
+              honkasalo.sami@gmail.com</a
+            ><br />
+            040 5598495
+          </address>
+        </div>
+      </footer>
+      <!-- End footer -->
     </main>
     <!-- End page -->
-</body>
+  </body>
+</html>

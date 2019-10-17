@@ -1,371 +1,367 @@
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0em;
-    background-color: #D3D3D3;
-    font-size: 100%;
-    height: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0em;
+  background-color: #d3d3d3;
+  font-size: 100%;
+  height: 100%;
 }
 
 main {
-    height: 100%;
-    background-color: #0B0C10;
+  height: 100%;
+  background-color: #0b0c10;
 }
 
 header {
-    border-bottom: none;
-    height: 40%;
-    display: flex;
+  border-bottom: none;
+  height: 40%;
+  display: flex;
 }
 
 header h1 {
-    padding: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 0em;
-    color: #66FCF1;
-    font-size: 3rem;
-    margin: 0;
+  padding: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0em;
+  color: #66fcf1;
+  font-size: 3rem;
+  margin: 0;
 }
 
 /* Surname has a its own ID for removal of the top padding */
 #surname {
-    padding-top: 0em;
+  padding-top: 0em;
 }
 
 /* Left header */
 .header-left {
-    width: 40%;
-    float: left;
-    background-color: #1F2833;
-    min-height: 100%;
+  width: 40%;
+  float: left;
+  background-color: #1f2833;
+  min-height: 100%;
 }
 
 /* Right header */
 .header-right {
-    background-color: #ffffff;
-    width: 60%;
-    min-height: 100%;
-    float: right;
-    z-index: 1;
+  background-color: #ffffff;
+  width: 60%;
+  min-height: 100%;
+  float: right;
+  z-index: 1;
 }
 
 .header-right h1 {
-    text-align: center;
-    padding: 0em;
-    padding-top: 0.5em;
-    padding-bottom: 0em;
-    color: #45A29E;
-    font-size: 3rem;
-    margin: 12% 10% 5% 10%;
+  text-align: center;
+  padding: 0em;
+  padding-top: 0.5em;
+  padding-bottom: 0em;
+  color: #45a29e;
+  font-size: 3rem;
+  margin: 12% 10% 5% 10%;
 }
 
 /* Righ header text */
 .header-text {
-    display: inline-block;
-    margin: 0% 10% 10% 25%;
-
+  display: inline-block;
+  margin: 0% 10% 10% 25%;
 }
 
 /*  Portrait
     Scale portrait size according to viewport width */
 .portrait {
-    background-image: url("../images/samihonkasalo.jpg");
-    width: 27vw;
-    height: 27vw;
-    border: 0.625em solid #fff;
-    border-radius: 50%;
-    padding: 0.1em;    
-    background-size: cover;
-    background-position-y: 20%;
-    margin: 0% 0% 5% 50%;
-    position: relative;
-    z-index: 9;
-    box-shadow: 0.1875em 0.1875em 0.25em 0em rgba(0,0,0,0.75);
+  background-image: url("../images/samihonkasalo.jpg");
+  width: 27vw;
+  height: 27vw;
+  border: 0.625em solid #fff;
+  border-radius: 50%;
+  padding: 0.1em;
+  background-size: cover;
+  background-position-y: 20%;
+  margin: 0% 0% 5% 50%;
+  position: relative;
+  z-index: 9;
+  box-shadow: 0.1875em 0.1875em 0.25em 0em rgba(0, 0, 0, 0.75);
 }
 
 /* Navigation bar + menu. Note that menu is transformed into a hamburger menu on mobile */
 
 nav {
-    float: right;
-    position: fixed;
-    display: block;
-    z-index: 5;
-    top: 0;
-    right: 0;
-    border-bottom: 0.125em solid #000;
-    border-left: 0.125em solid #000;
+  float: right;
+  position: fixed;
+  display: block;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  border-bottom: 0.125em solid #000;
+  border-left: 0.125em solid #000;
 }
 
 .header-right ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    background-color: #fff;
-  }
-  
-.header-right li {
-    float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fff;
 }
-  
+
+.header-right li {
+  float: left;
+}
+
 .header-right li a {
-    color: #000000;
-    display: block;
-    padding: 1em 1em;
-    border-right: 0.0625em solid #f4f4f4;
-    text-decoration: none;
+  color: #000000;
+  display: block;
+  padding: 1em 1em;
+  border-right: 0.0625em solid #f4f4f4;
+  text-decoration: none;
 }
 
 .header-right li a:visited {
-    color: #000000;
+  color: #000000;
 }
 
 /* Change background color/color when hovered and not active site */
 .menu a:hover:not(.active),
 .header-right .menu-btn:hover {
-    background-color: #1F2833;
-    color: #ffffff;
+  background-color: #1f2833;
+  color: #ffffff;
 }
 
 /* Navigation bar menu */
-  
+
 .header-right .menu {
-    float: right;
-    max-height: none;
-    transition: max-height .2s ease-out;
+  float: right;
+  max-height: none;
+  transition: max-height 0.2s ease-out;
 }
-  
+
 /* Navigation bar menu icon */
-  
+
 .header-right .menu-icon {
-    cursor: pointer;
-    display: none;
-    float: right;
-    padding: 1.75em 1.25em;
-    position: relative;
-    user-select: none;
+  cursor: pointer;
+  display: none;
+  float: right;
+  padding: 1.75em 1.25em;
+  position: relative;
+  user-select: none;
 }
-  
+
 .header-right .menu-icon .navicon {
-    background: #333;
-    display: block;
-    height: 0.125em;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 1.125em;
+  background: #333;
+  display: block;
+  height: 0.125em;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 1.125em;
 }
-  
+
 .header-right .menu-icon .navicon:before,
 .header-right .menu-icon .navicon:after {
-    background: #333;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-  
-.header-right .menu-icon .navicon:before {
-    top: 0.3125em;
-}
-  
-.header-right .menu-icon .navicon:after {
-    top: -0.3125em;
-}
-  
-  /* Navigation bar menu button */
-  
-.header-right .menu-btn {
-    display: none;
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
 }
 
+.header-right .menu-icon .navicon:before {
+  top: 0.3125em;
+}
+
+.header-right .menu-icon .navicon:after {
+  top: -0.3125em;
+}
+
+/* Navigation bar menu button */
+
+.header-right .menu-btn {
+  display: none;
+}
 
 .header-right .menu-btn:checked ~ .menu {
-    max-height: 20em;
+  max-height: 20em;
 }
 
-  
 .header-right .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
+  background: transparent;
 }
-  
+
 .header-right .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
-  
+
 .header-right .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-  
+
 .header-right .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .header-right .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
+  top: 0;
 }
-
-
 
 /* Content */
 
 /* Content top */
 .content-top {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    background-color: #ffffff;
-    max-height: 85%;
-    width: 100%;
-    float: left;
-    padding: 5em 10em;
-    text-align: center;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: #ffffff;
+  max-height: 85%;
+  width: 100%;
+  float: left;
+  padding: 5em 10em;
+  text-align: center;
 }
 
 .content-top h2 {
-    color: #45A29E;
+  color: #45a29e;
 }
 
 /* Content middle */
 .content-middle {
-    background-color: #1F2833;
-    color: #0B0C10;
-    border-top: 0;
-    padding-top: 1em;
-    padding-bottom: 1.5em;
-    max-height: 85%;
-    width: 100%;
-    float: left;
-    display: flex;
-    justify-content: space-around;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    align-items: center;
-    flex-wrap: wrap;
+  background-color: #1f2833;
+  color: #0b0c10;
+  border-top: 0;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+  max-height: 85%;
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /* Cards for middle content */
 
 /* Transistion both for normal and hovered elements to allow for smooth flow when unhovered */
- 
+
 .card {
-    flex: 19em;
-    background: white;
-    margin-top: 2.5em;
-    height: 25em;
-    width: auto;
-    min-width: 27em;
-    transition: 0.6s all ease;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-    margin-bottom: 1.5em;
-    text-align: center;
-    border-radius: 10%;
-    overflow: hidden;
+  flex: 19em;
+  flex-grow: 0.33;
+  background: white;
+  margin-top: 2.5em;
+  height: 25em;
+  width: auto;
+  min-width: 27em;
+  transition: 0.6s all ease;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+  text-align: center;
+  border-radius: 10%;
+  overflow: hidden;
 }
 
 /* !!NOTE!! Background is defined as inline style to avoid having a card definition for every card on the site */
 .cardTop {
-    transition: 0.4s all ease;
-    height: 65%;
-    width: auto;
+  transition: 0.4s all ease;
+  height: 65%;
+  width: auto;
 }
-  
+
 .cardBottom {
-    height: 35%;
-    width: auto;
-    word-wrap: normal;
-    transition: 0.4s all ease;
+  height: 35%;
+  width: auto;
+  word-wrap: normal;
+  transition: 0.4s all ease;
 }
-  
+
 .cardText {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    min-height: 100%;
-    padding: 1em;
-    min-width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  min-height: 100%;
+  padding: 1em;
+  min-width: 100%;
 }
-  
+
 .cardTitle {
-    margin-top: 0.1em;
-    margin-bottom: 0.1em;
-    font-size: 1.2em;
-    font-weight: 700;
-    color: #45A29E;
-    text-align: center;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #45a29e;
+  text-align: center;
 }
-  
+
 .cardInfo {
-    padding-top: 0.5em;
-    font-size: 1em;
-    margin: 0.3em;
-    margin-bottom: 1.5em;
-    font-weight: 500;
-    color: #0B0C10;
-    text-align: center;
+  padding-top: 0.5em;
+  font-size: 1em;
+  margin: 0.3em;
+  margin-bottom: 1.5em;
+  font-weight: 500;
+  color: #0b0c10;
+  text-align: center;
 }
-  
+
 /* Hidding the entire text so that it will only show on hover */
-  
+
 .cardHoverText {
-    visibility: hidden;
-    font-size: 1em;
+  visibility: hidden;
+  font-size: 1em;
 }
 
 .cardHoverText ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 0.1em;
-}
-  
-/* Hover effects for the cards */
-  
-.card:hover {
-    box-shadow: 0 0.3125em 0.9375em rgba(0, 0, 0, 0.4);
-}
-  
-/* Change the child properties when parent is hovered */
-  
-.card:hover .cardHoverText {
-    visibility: visible;
-    transition: 0.4s all ease;
-    transition-delay: 0.1999s;
-}
-  
-.card:hover .cardBottom {
-    transition: 0.4s all ease;
-    height: 65%;
-    opacity: 1;
-}
-  
-.card:hover .cardTop {
-    height: 35%;
-    opacity: 0.8;
-    transition: 0.4s all ease;
+  list-style: none;
+  padding: 0;
+  margin-top: 0.1em;
 }
 
+/* Hover effects for the cards */
+
+.card:hover {
+  box-shadow: 0 0.3125em 0.9375em rgba(0, 0, 0, 0.4);
+}
+
+/* Change the child properties when parent is hovered */
+
+.card:hover .cardHoverText {
+  visibility: visible;
+  transition: 0.4s all ease;
+  transition-delay: 0.1999s;
+}
+
+.card:hover .cardBottom {
+  transition: 0.4s all ease;
+  height: 65%;
+  opacity: 1;
+}
+
+.card:hover .cardTop {
+  height: 35%;
+  opacity: 0.8;
+  transition: 0.4s all ease;
+}
 
 /* Button for cards */
 .card-button {
-    visibility: hidden;
-    padding: 0.6rem;
-    outline: none;
-    border: 0.1em solid #0B0C10;
-    border-radius: 0.1875em;
-    background: white;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
+  visibility: hidden;
+  padding: 0.6rem;
+  outline: none;
+  border: 0.1em solid #0b0c10;
+  border-radius: 0.1875em;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .card:hover .card-button {
-    visibility: visible;
-    transition: 0.4s all ease;
-    transition-delay: 0.3s;
+  visibility: visible;
+  transition: 0.4s all ease;
+  transition-delay: 0.3s;
 }
 
 /* Change background color on hover */
 /* Transition properties set as !important to override parent hover settings. This is done to change the color instantly on hover */
 .card-button:hover {
-    transition-delay: 0s !important;
-    transition: 0s !important;
-    background: #66FCF1;
-    color: #1F2833;
+  transition-delay: 0s !important;
+  transition: 0s !important;
+  background: #66fcf1;
+  color: #1f2833;
 }
 
 /* Card star rating checked, unchecked & half checked color, used for CV/skills */
@@ -373,269 +369,263 @@ nav {
 .unchecked,
 .checked,
 .half {
-    color: #45A29E;
+  color: #45a29e;
 }
 
 /* Remove visited color for LinkedIn icon in contact card */
 .linkedin a {
-    color: #15A9BF;
+  color: #15a9bf;
 }
 
 .linkedin a:visited {
-    color: #15A9BF;
+  color: #15a9bf;
 }
 
 /* Content bottom */
 .content-bottom {
-    background-color: #ffffff;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    border-top: 0;
-    max-height: 85%;
-    width: 100%;
-    float: left;
-    padding: 5em 10em;
-    text-align: center;
-    height: auto;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-top: 0;
+  max-height: 85%;
+  width: 100%;
+  float: left;
+  padding: 5em 10em;
+  text-align: center;
+  height: auto;
 }
 
 .content-bottom h2 {
-    color: #45A29E;
+  color: #45a29e;
 }
 
 /* Cat pictures */
 
 .cats img {
-    width: auto;
-    height: 15em;
-    border-radius: 15%;
-    margin: 0.3em;
+  width: auto;
+  height: 15em;
+  border-radius: 15%;
+  margin: 0.3em;
 }
 
 /* Footer */
 footer {
-    height: 20em;
-    border-top: none;
-    background-color: #1F2833;
-    color: #F7F5EE;
-    text-align: center;
-    padding-top: 5em;
-    clear: both;
+  height: 20em;
+  border-top: none;
+  background-color: #1f2833;
+  color: #f7f5ee;
+  text-align: center;
+  padding-top: 5em;
+  clear: both;
 }
 
 /* Footer left contains the menu */
 
 .footer-left {
-    width: 50%;
-    float: left;
+  width: 50%;
+  float: left;
 }
 
-.footer-menu{
-    list-style: none;
+.footer-menu {
+  list-style: none;
 }
 
 .footer-menu a {
-    
-    list-style: none;
-    text-decoration: none;
-    line-height: 2em;
+  list-style: none;
+  text-decoration: none;
+  line-height: 2em;
 }
 
 /* Change footer menu text color depending on if active/hovered */
 .footer-menu a:not(.footer-active) {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .footer-menu a:visited:not(.footer-active) {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .footer-menu a:hover:not(.footer-active) {
-    color: #66FCF1;
+  color: #66fcf1;
 }
 
 /* Footer right contains contact information and social media links */
 
 .footer-right {
-    width: 50%;
-    float: right;
-    line-height: 3em;
+  width: 50%;
+  float: right;
+  line-height: 3em;
 }
 
 .social-icons a {
-    color: #45A29E;
-    font-size: 2em;
-    margin: 0 0.625em;
+  color: #45a29e;
+  font-size: 2em;
+  margin: 0 0.625em;
 }
 
-.social-icons a:hover, a:active {
-    color: #fff;
+.social-icons a:hover,
+a:active {
+  color: #fff;
 }
 
 .footertext {
-    line-height: 0.0em;
-    display: inline;
+  line-height: 0em;
+  display: inline;
 }
 
 .footeraddress {
-    display: inline;
-    line-height: 0.0em;
-    color: #F7F5EE;
+  display: inline;
+  line-height: 0em;
+  color: #f7f5ee;
 }
 
 .footeraddress a {
-    text-decoration: none;
-    color: #F7F5EE;
+  text-decoration: none;
+  color: #f7f5ee;
 }
 
 /* Used for clearing float if necessary */
 .clear {
-    clear: both;
+  clear: both;
 }
 
 /* Custom fonts */
 
 .font-montserrat {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .font-opensans {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .font-satisfy {
-    font-family: 'Satisfy', sans-serif;
+  font-family: "Satisfy", sans-serif;
 }
 
 /* Space between icons and text for nav */
 #navlist a i {
-    margin-left: 0.5em;    
+  margin-left: 0.5em;
 }
-
 
 /* Active classes for navbar and footer menu
 Change color/background color depending on which site is active*/
 .active {
-    background-color: #45A29E;
+  background-color: #45a29e;
 }
 
 .footer-active {
-    color: #45A29E;
+  color: #45a29e;
 }
-
 
 /*  Mobile UI: */
 
 @media screen and (max-width: 56em) {
-    /* Change header into display block to allow right and left header to stack */
-    header {
-        display: block;
-        float: left;
-    }
-    /* Swap left header to top */
-    .header-left {
-        height: auto;
-        width: 100%;
-        text-align: center;
-    }
-    /* Move portrait to the center of the top (left) header */
-    .portrait {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 5%;
-        margin-top: 0;
-    }
-    /* Swap right header to below left */
-    .header-right {
-        width: 100%;
-        height: auto;
-    } 
+  /* Change header into display block to allow right and left header to stack */
+  header {
+    display: block;
+    float: left;
+  }
+  /* Swap left header to top */
+  .header-left {
+    height: auto;
+    width: 100%;
+    text-align: center;
+  }
+  /* Move portrait to the center of the top (left) header */
+  .portrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    margin-top: 0;
+  }
+  /* Swap right header to below left */
+  .header-right {
+    width: 100%;
+    height: auto;
+  }
 
-    /* Transform navigation bar to be a "hamburger menu" */
-    .header-right ul {
-        overflow: hidden;
-    }
+  /* Transform navigation bar to be a "hamburger menu" */
+  .header-right ul {
+    overflow: hidden;
+  }
 
-    .header-right li {
-        float: none;
-        margin-bottom: 0.3125em;
-        text-align: center;
-    }
-    .header-right li a {
-        padding: 0.5em 0.5em;
-    }
-    .header-right .menu {
-        clear: both;
-        float: none;
-        max-height: 0;
-    }
-    .header-right .menu-icon {
-        display: inline-block;
-    }
-    .header-text {
-        margin: 5% 5% 5% 5%;
-    }
-    .nav {
-        border-left: none;
-    }
-    nav {
-        float: none;
-        position: relative;
-    }
+  .header-right li {
+    float: none;
+    margin-bottom: 0.3125em;
+    text-align: center;
+  }
+  .header-right li a {
+    padding: 0.5em 0.5em;
+  }
+  .header-right .menu {
+    clear: both;
+    float: none;
+    max-height: 0;
+  }
+  .header-right .menu-icon {
+    display: inline-block;
+  }
+  .header-text {
+    margin: 5% 5% 5% 5%;
+  }
+  .nav {
+    border-left: none;
+  }
+  nav {
+    float: none;
+    position: relative;
+  }
 
-    /* Adjust content margins and paddings for better reading */
+  /* Adjust content margins and paddings for better reading */
 
-    .content-top {
-        text-align: left;
-    }
+  .content-top {
+    text-align: left;
+  }
 
-    .header-text {
-        margin: 0;
-        padding: 2em 3em;
-    }
-    .content-top,
-    .content-bottom {
-        padding: 2em 3em;
-    }
-    .card {
-        min-width: 0;
-        height: 30em;
-    }
+  .header-text {
+    margin: 0;
+    padding: 2em 3em;
+  }
+  .content-top,
+  .content-bottom {
+    padding: 2em 3em;
+  }
+  .card {
+    min-width: 0;
+    height: 30em;
+  }
 
-    /* Reduce card text size to better fit the cards */
+  /* Reduce card text size to better fit the cards */
 
-    .cardHoverText {
-        font-size: 0.91em;
-    }
+  .cardHoverText {
+    font-size: 0.91em;
+  }
 
-    /* Change cat picture from auto widht to auto height */
+  /* Change cat picture from auto widht to auto height */
 
-    .cats img {
-        height: auto;
-        width: 15em;
-    }
+  .cats img {
+    height: auto;
+    width: 15em;
+  }
 
-    /* Stack footer content on top of eachother */
+  /* Stack footer content on top of eachother */
 
-    .footer-left {
-        float: none;
-        width: 100%;
-    }
+  .footer-left {
+    float: none;
+    width: 100%;
+  }
 
-    .footer-right {
-        float: none;
-        width: 100%;
-    }
+  .footer-right {
+    float: none;
+    width: 100%;
+  }
 
-    footer {
-        height: auto;
-    }
-    .footer-left ul {
-        padding: 0;
-    }
+  footer {
+    height: auto;
+  }
+  .footer-left ul {
+    padding: 0;
+  }
 }
-
-
-
-    
